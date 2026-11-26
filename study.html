@@ -1,65 +1,73 @@
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#08090B">
-  <meta name="description" content="تصفح المواد والفصول والدروس التعليمية في لحظة نسخ.">
-  <title>الدراسة | لحظة نسخ</title>
+  <meta name="description" content="تصفح المحتوى التعليمي في لحظة نسخ.">
+  <title>المحتوى الدراسي | لحظة نسخ</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/data.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
-<body>
-  <header class="header">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">ل</span>
-      <span>لحظة <strong>نسخ</strong></span>
-    </a>
 
-    <nav class="header-actions" aria-label="إعدادات الموقع">
-      <button class="icon-button" id="themeBtn" type="button" aria-label="تغيير المظهر">
-        <span id="themeIcon">☀</span>
-      </button>
-      <button class="icon-button language-button" id="languageBtn" type="button">EN</button>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ل</span>
+        <span class="brand-name" data-i18n="brand">لحظة نسخ</span>
+      </a>
+
+      <nav class="header-actions">
+        <button class="icon-button" id="languageBtn" type="button">EN</button>
+        <button class="icon-button" id="themeBtn" type="button">
+          <span id="themeIcon">☀</span>
+        </button>
+      </nav>
+    </div>
   </header>
 
-  <main class="container study-main">
-    <div class="study-toolbar">
-      <button class="secondary-button" id="backBtn" type="button">
-        <span aria-hidden="true">→</span> رجوع
-      </button>
-      <a class="secondary-button" href="index.html">⌂ الرئيسية</a>
-    </div>
+  <main class="study-main">
+    <div class="container">
+      <a class="back-link" id="backBtn" href="index.html">
+        <span aria-hidden="true">→</span>
+        <span data-i18n="backHome">العودة للرئيسية</span>
+      </a>
 
-    <section class="study-heading">
-      <span class="eyebrow" id="pageEyebrow">مساحة التعلم</span>
-      <h1 id="pageTitle">جاري التحميل...</h1>
-      <p id="pageDescription">اختار المحتوى اللي عايز تذاكره.</p>
-    </section>
-
-    <nav class="breadcrumb" id="breadcrumb" aria-label="مسار التصفح"></nav>
-
-    <section class="study-content">
-      <div class="study-grid" id="contentGrid"></div>
-      <div class="empty-state" id="emptyState" hidden>
-        <span class="empty-icon">✦</span>
-        <h2>المحتوى قيد التجهيز</h2>
-        <p>هنضيف المحتوى هنا بعد مراجعته وتجهيزه.</p>
-        <a class="primary-button" href="index.html">العودة للرئيسية</a>
+      <div class="study-heading">
+        <span class="section-kicker" id="pageEyebrow">لحظة نسخ</span>
+        <h1 id="pageTitle">المحتوى الدراسي</h1>
+        <p id="pageDescription">اختار المحتوى اللي عايز تبدأ بيه.</p>
       </div>
-    </section>
+
+      <div class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></div>
+
+      <div class="content-grid" id="contentGrid"></div>
+
+      <section class="empty-state" id="emptyState" hidden>
+        <div class="empty-icon">✦</div>
+        <h2 id="emptyTitle">المحتوى قريبًا</h2>
+        <p id="emptyDescription">لسه مفيش محتوى مضاف في القسم ده.</p>
+        <a class="secondary-button" href="index.html" data-i18n="backHome">العودة للرئيسية</a>
+      </section>
+    </div>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <a class="brand footer-brand" href="index.html">
         <span class="brand-mark">ل</span>
-        <span>لحظة <strong>نسخ</strong></span>
+        <span class="brand-name" data-i18n="brand">لحظة نسخ</span>
       </a>
-      <a href="privacy.html">سياسة الخصوصية</a>
-      <p>© <span id="currentYear"></span> لحظة نسخ</p>
+
+      <p data-i18n="footerCopyright">© لحظة نسخ. جميع الحقوق محفوظة.</p>
+
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="privacyLink">سياسة الخصوصية</a>
+        <a href="privacy.html#terms" data-i18n="termsLink">شروط الاستخدام</a>
+      </div>
     </div>
   </footer>
 </body>

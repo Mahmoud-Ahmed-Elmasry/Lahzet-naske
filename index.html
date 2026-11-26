@@ -1,143 +1,143 @@
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#08090B">
-  <meta name="description" content="لحظة نسخ - منصتك التعليمية للوصول إلى الدروس والأسئلة والإجابات بسهولة.">
-  <title>لحظة نسخ | منصتك التعليمية</title>
+  <meta name="description" content="لحظة نسخ - طريقك الأسهل للوصول إلى الأسئلة والإجابات التعليمية.">
+  <title>لحظة نسخ | ابدأ رحلتك التعليمية</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
 </head>
-<body>
-  <header class="header">
-    <a class="brand" href="index.html" aria-label="لحظة نسخ - الرئيسية">
-      <span class="brand-mark">ل</span>
-      <span>لحظة <strong>نسخ</strong></span>
-    </a>
 
-    <nav class="header-actions" aria-label="إعدادات الموقع">
-      <button class="icon-button" id="themeBtn" type="button" aria-label="تغيير المظهر">
-        <span id="themeIcon">☀</span>
-      </button>
-      <button class="icon-button language-button" id="languageBtn" type="button">
-        EN
-      </button>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="لحظة نسخ">
+        <span class="brand-mark">ل</span>
+        <span class="brand-name" data-i18n="brand">لحظة نسخ</span>
+      </a>
+
+      <nav class="header-actions">
+        <button class="icon-button" id="languageBtn" type="button" aria-label="Change language">EN</button>
+        <button class="icon-button" id="themeBtn" type="button" aria-label="Change theme">
+          <span id="themeIcon">☀</span>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero container">
-      <div class="hero-content">
-        <span class="eyebrow">
+    <section class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-badge">
           <span class="status-dot"></span>
-          طريقك للتعلم أصبح أسهل
-        </span>
+          <span data-i18n="heroBadge">طريقك للمعلومة أسهل</span>
+        </div>
 
         <h1>
-          كل إجابة تبدأ<br>
-          <span class="highlight">بلحظة فهم.</span>
+          <span data-i18n="heroTitle1">كل إجابة تبدأ</span>
+          <span class="highlight" data-i18n="heroTitle2">بلحظة نسخ</span>
         </h1>
 
-        <p class="hero-description">
-          اختار صفك، افتح فصلك، ووصل للمعلومة اللي بتدور عليها
-          بسهولة ومن غير تعقيد.
+        <p class="hero-description" data-i18n="heroDescription">
+          اختار صفك ومادتك، ووصل للأسئلة والإجابات اللي بتدور عليها بكل سهولة.
         </p>
 
-        <a class="primary-button" href="#grades">
-          ابدأ التعلم <span aria-hidden="true">←</span>
+        <a href="#grades" class="primary-button">
+          <span data-i18n="startLearning">ابدأ التعلم</span>
+          <span aria-hidden="true">←</span>
         </a>
 
         <div class="hero-note">
-          <span class="note-icon">✓</span>
-          تجربة تعليمية بسيطة وسريعة
+          <span>✦</span>
+          <span data-i18n="heroNote">مذاكرتك بشكل أبسط وأسرع</span>
         </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="visual-card visual-card-main">
-          <span class="visual-label">لحظة نسخ</span>
-          <div class="visual-symbol">ل</div>
-          <div class="visual-line"></div>
-          <div class="visual-line short"></div>
-          <div class="visual-yellow"></div>
+      <div class="hero-decoration decoration-one"></div>
+      <div class="hero-decoration decoration-two"></div>
+    </section>
+
+    <section class="grades-section section-padding" id="grades">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker" data-i18n="chooseGrade">ابدأ من هنا</span>
+          <h2 data-i18n="gradesTitle">اختار صفك الدراسي</h2>
+          <p data-i18n="gradesDescription">حدد الصف الدراسي عشان نوصلك للمحتوى المناسب ليك.</p>
         </div>
-        <div class="floating-tag">تعلم بذكاء ✦</div>
-        <div class="floating-number">01</div>
+
+        <div class="grade-grid">
+          <a class="grade-card" href="study.html?view=chapters&grade=1">
+            <div class="grade-card-top">
+              <span class="grade-number">01</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <div class="grade-icon icon-purple">✦</div>
+            <h3 data-i18n="firstGrade">أولى ثانوي</h3>
+            <p data-i18n="firstGradeDescription">استكشف الفصول والدروس والأسئلة.</p>
+            <span class="card-link" data-i18n="exploreContent">استكشف المحتوى</span>
+          </a>
+
+          <a class="grade-card" href="study.html?view=subjects&grade=2">
+            <div class="grade-card-top">
+              <span class="grade-number">02</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <div class="grade-icon icon-green">⌘</div>
+            <h3 data-i18n="secondGrade">تانية ثانوي</h3>
+            <p data-i18n="secondGradeDescription">اختار المادة اللي عايز تذاكرها.</p>
+            <span class="card-link" data-i18n="exploreContent">استكشف المحتوى</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="container grades-section" id="grades">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">ابدأ من هنا</span>
-          <h2>اختار صفك الدراسي</h2>
-          <p>حدد الصف عشان نوصلك للمحتوى المناسب.</p>
+    <section class="features-section section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker" data-i18n="whyUs">ليه لحظة نسخ؟</span>
+          <h2 data-i18n="featuresTitle">تجربة مذاكرة أبسط</h2>
+          <p data-i18n="featuresDescription">كل اللي تحتاجه للوصول للمعلومة في مكان واحد.</p>
         </div>
-      </div>
 
-      <div class="grade-grid">
-        <a class="grade-card" href="study.html?view=chapters&grade=1">
-          <span class="card-number">01</span>
-          <span class="grade-icon icon-yellow">١</span>
-          <h3>أولى ثانوي</h3>
-          <p>استكشف الفصول والدروس والأسئلة.</p>
-          <span class="card-link">عرض الفصول <span>←</span></span>
-        </a>
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-icon icon-yellow">⌕</span>
+            <h3 data-i18n="feature1Title">وصول سهل</h3>
+            <p data-i18n="feature1Description">تنظيم المحتوى حسب الصف والمادة والفصل والدرس.</p>
+          </article>
 
-        <a class="grade-card" href="study.html?view=subjects&grade=2">
-          <span class="card-number">02</span>
-          <span class="grade-icon icon-purple">٢</span>
-          <h3>تانية ثانوي</h3>
-          <p>اختار المادة اللي عايز تبدأ بيها.</p>
-          <span class="card-link">اختيار المادة <span>←</span></span>
-        </a>
-      </div>
-    </section>
+          <article class="feature-card">
+            <span class="feature-icon icon-green">✓</span>
+            <h3 data-i18n="feature2Title">إجابات واضحة</h3>
+            <p data-i18n="feature2Description">اعرض السؤال والإجابة في مكان واحد بشكل منظم.</p>
+          </article>
 
-    <section class="container features-section">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">ليه لحظة نسخ؟</span>
-          <h2>التعلم من غير تعقيد</h2>
+          <article class="feature-card">
+            <span class="feature-icon icon-purple">▣</span>
+            <h3 data-i18n="feature3Title">نسخ بسهولة</h3>
+            <p data-i18n="feature3Description">انسخ الإجابة بضغطة واحدة لما تكون الميزة متاحة.</p>
+          </article>
         </div>
-      </div>
-
-      <div class="features-grid">
-        <article class="feature-card">
-          <span class="feature-icon icon-blue">⌕</span>
-          <h3>وصول سهل</h3>
-          <p>تنقل واضح بين الصفوف والفصول والدروس.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon icon-green">✓</span>
-          <h3>تنظيم المحتوى</h3>
-          <p>كل مادة ومحتواها في مكان منظم.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-icon icon-orange">↗</span>
-          <h3>تجربة سريعة</h3>
-          <p>واجهة خفيفة ومناسبة للموبايل والكمبيوتر.</p>
-        </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <a class="brand footer-brand" href="index.html">
         <span class="brand-mark">ل</span>
-        <span>لحظة <strong>نسخ</strong></span>
+        <span class="brand-name" data-i18n="brand">لحظة نسخ</span>
       </a>
 
-      <div class="footer-links">
-        <a href="privacy.html">سياسة الخصوصية</a>
-        <a href="mailto:contact@example.com">اتصل بنا</a>
-      </div>
+      <p data-i18n="footerCopyright">© لحظة نسخ. جميع الحقوق محفوظة.</p>
 
-      <p>© <span id="currentYear"></span> لحظة نسخ</p>
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="privacyLink">سياسة الخصوصية</a>
+        <a href="privacy.html#terms" data-i18n="termsLink">شروط الاستخدام</a>
+      </div>
     </div>
   </footer>
 </body>

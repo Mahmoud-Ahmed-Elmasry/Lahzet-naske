@@ -1,33 +1,32 @@
-"use strict";
-
-/*
-  بيانات الموقع.
-
-  نضيف الفصول والدروس والأسئلة بعد تجهيز المحتوى ومراجعته.
-  لا تضع هنا محتوى تجريبياً على أنه محتوى المنهج الحقيقي.
-*/
 
 window.STUDY_DATA = {
   1: {
     title: "أولى ثانوي",
+    title_en: "First Secondary",
     chapters: []
   },
 
   2: {
     title: "تانية ثانوي",
+    title_en: "Second Secondary",
 
     subjects: [
       {
         id: "qureo",
         title: "منصة QUREO",
-        description: "محتوى البرمجة والتعلم من خلال المنصة.",
+        title_en: "QUREO Programming Platform",
+        description: "محتوى البرمجة الخاص بمنصة كيوريو.",
+        description_en: "Programming content for the QUREO platform.",
         accent: "purple",
         chapters: []
       },
+
       {
         id: "finance",
         title: "الثقافة المالية",
-        description: "محتوى الثقافة المالية والدروس.",
+        title_en: "Financial Literacy",
+        description: "دروس وأسئلة الثقافة المالية.",
+        description_en: "Financial literacy lessons and questions.",
         accent: "green",
         chapters: []
       }

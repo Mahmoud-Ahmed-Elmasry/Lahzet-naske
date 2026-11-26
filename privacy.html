@@ -1,87 +1,101 @@
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="سياسة الخصوصية لموقع لحظة نسخ.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090B">
+  <meta name="description" content="سياسة الخصوصية وشروط الاستخدام لموقع لحظة نسخ.">
   <title>سياسة الخصوصية | لحظة نسخ</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
 </head>
-<body>
-  <header class="header">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">ل</span>
-      <span>لحظة <strong>نسخ</strong></span>
-    </a>
 
-    <nav class="header-actions">
-      <button class="icon-button" id="themeBtn" type="button" aria-label="تغيير المظهر">
-        <span id="themeIcon">☀</span>
-      </button>
-      <button class="icon-button" id="languageBtn" type="button">EN</button>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">ل</span>
+        <span class="brand-name" data-i18n="brand">لحظة نسخ</span>
+      </a>
+
+      <nav class="header-actions">
+        <button class="icon-button" id="languageBtn" type="button">EN</button>
+        <button class="icon-button" id="themeBtn" type="button">
+          <span id="themeIcon">☀</span>
+        </button>
+      </nav>
+    </div>
   </header>
 
-  <main class="container policy-content">
-    <span class="eyebrow">لحظة نسخ</span>
-    <h1>سياسة الخصوصية</h1>
+  <main class="policy-main">
+    <div class="container policy-container">
+      <a class="back-link" href="index.html">
+        <span aria-hidden="true">→</span>
+        <span data-i18n="backHome">العودة للرئيسية</span>
+      </a>
 
-    <p>
-      توضح هذه الصفحة طريقة تعامل موقع لحظة نسخ مع المعلومات
-      والبيانات عند استخدام الموقع.
-    </p>
+      <div class="study-heading">
+        <span class="section-kicker" data-i18n="legalLabel">المعلومات القانونية</span>
+        <h1 data-i18n="privacyTitle">سياسة الخصوصية</h1>
+        <p data-i18n="privacyIntro">نحترم خصوصيتك ونسعى لتوضيح طريقة استخدام الموقع.</p>
+      </div>
 
-    <h2>المعلومات التي نتعامل معها</h2>
-    <p>
-      يجب توضيح أنواع البيانات التي يجمعها الموقع فعليًا، إن وجدت،
-      والغرض من جمع كل نوع، ومدة الاحتفاظ به.
-    </p>
+      <article class="policy-card">
+        <h2 data-i18n="privacySection1Title">1. المعلومات التي نجمعها</h2>
+        <p data-i18n="privacySection1Text">لا يطلب الموقع من الطالب إنشاء حساب لاستخدام صفحات المحتوى الأساسية. وقد تُجمع بعض البيانات التقنية الضرورية لتشغيل الموقع وتحسينه، وفق الأدوات التي يتم تفعيلها فعليًا.</p>
 
-    <h2>ملفات تعريف الارتباط</h2>
-    <p>
-      قد يستخدم الموقع ملفات تعريف الارتباط أو تقنيات مشابهة
-      لتشغيل بعض الخصائص وحفظ تفضيلات المستخدم.
-      يجب تحديث هذا القسم وفق الأدوات المستخدمة فعليًا.
-    </p>
+        <h2 data-i18n="privacySection2Title">2. ملفات تعريف الارتباط</h2>
+        <p data-i18n="privacySection2Text">قد يستخدم الموقع ملفات تعريف الارتباط أو تقنيات مشابهة لحفظ تفضيلات المستخدم، مثل اللغة والوضع اللوني. وإذا تمت إضافة أدوات تحليل أو إعلانات مستقبلًا، فسيتم توضيح استخدامها في هذه السياسة.</p>
 
-    <h2>الإعلانات والخدمات الخارجية</h2>
-    <p>
-      إذا تم تفعيل خدمات إعلانية مثل Google AdSense،
-      يجب توضيح استخدام ملفات تعريف الارتباط والتقنيات
-      التي قد تستخدمها Google وشركاؤها، مع توفير خيارات
-      الموافقة والتحكم المطلوبة بحسب موقع الزائر والمتطلبات المطبقة.
-    </p>
+        <h2 data-i18n="privacySection3Title">3. الإعلانات والخدمات الخارجية</h2>
+        <p data-i18n="privacySection3Text">قد يعرض الموقع إعلانات أو يستخدم خدمات خارجية مستقبلًا. وتخضع هذه الخدمات لسياسات الخصوصية الخاصة بمقدميها، وسيتم تحديث هذه الصفحة عند تفعيلها.</p>
 
-    <h2>حماية المعلومات</h2>
-    <p>
-      نعمل على تطبيق إجراءات تقنية وتنظيمية مناسبة لحماية
-      المعلومات التي نتعامل معها، مع ضرورة توضيح التدابير
-      الفعلية المطبقة قبل نشر هذه السياسة.
-    </p>
+        <h2 data-i18n="privacySection4Title">4. حماية البيانات</h2>
+        <p data-i18n="privacySection4Text">نعمل على اتخاذ إجراءات تقنية مناسبة للمساعدة في حماية الموقع والبيانات المرتبطة به، ولا يمكن ضمان أمان مطلق لأي خدمة عبر الإنترنت.</p>
 
-    <h2>التواصل</h2>
-    <p>
-      للاستفسارات المتعلقة بالخصوصية، يمكن التواصل معنا عبر:
-      contact@example.com
-    </p>
+        <h2 data-i18n="privacySection5Title">5. خصوصية الطلاب</h2>
+        <p data-i18n="privacySection5Text">الموقع موجه لأغراض تعليمية. لا تشارك بياناتك الشخصية أو كلمات المرور أو معلومات التواصل الخاصة بك في أي محتوى عام.</p>
 
-    <p>
-      <strong>تنبيه:</strong>
-      هذه مسودة أولية. لا تنشرها قبل استبدال البريد التجريبي،
-      ومراجعة الممارسات الفعلية للموقع، وإضافة التفاصيل القانونية المطلوبة.
-    </p>
+        <h2 data-i18n="privacySection6Title">6. التعديلات على السياسة</h2>
+        <p data-i18n="privacySection6Text">قد نقوم بتحديث سياسة الخصوصية عند إضافة خصائص جديدة أو عند الحاجة. وسيتم نشر النسخة المحدثة على هذه الصفحة.</p>
 
-    <a class="primary-button" href="index.html">العودة للرئيسية</a>
+        <h2 data-i18n="privacySection7Title">7. التواصل معنا</h2>
+        <p data-i18n="privacySection7Text">يمكنك التواصل معنا من خلال وسيلة التواصل الرسمية التي سنضيفها هنا عند تجهيزها.</p>
+      </article>
+
+      <article class="policy-card" id="terms">
+        <h2 data-i18n="termsTitle">شروط الاستخدام</h2>
+
+        <h3 data-i18n="termsSection1Title">استخدام المحتوى</h3>
+        <p data-i18n="termsSection1Text">يُقدم المحتوى لأغراض تعليمية ومساعدة الطلاب على المذاكرة. ينبغي للطالب الرجوع إلى مصادره الدراسية الرسمية عند الحاجة.</p>
+
+        <h3 data-i18n="termsSection2Title">حقوق المحتوى</h3>
+        <p data-i18n="termsSection2Text">يجب احترام حقوق الملكية الفكرية للكتب والمناهج والصور والمواد التابعة للغير. لا يجوز إعادة نشر محتوى محمي دون إذن أو أساس قانوني مناسب.</p>
+
+        <h3 data-i18n="termsSection3Title">تحديث المحتوى</h3>
+        <p data-i18n="termsSection3Text">قد يتغير المحتوى أو يتم تصحيحه أو إزالته في أي وقت بهدف تحسين تجربة الاستخدام.</p>
+      </article>
+
+      <p class="policy-update" data-i18n="policyDraftNotice">
+        تنبيه: هذه صياغة أولية، ويجب تحديثها لتطابق طريقة تشغيل الموقع الفعلية قبل النشر.
+      </p>
+    </div>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <a class="brand footer-brand" href="index.html">
         <span class="brand-mark">ل</span>
-        <span>لحظة <strong>نسخ</strong></span>
+        <span class="brand-name" data-i18n="brand">لحظة نسخ</span>
       </a>
-      <p>© <span id="currentYear"></span> لحظة نسخ</p>
+
+      <p data-i18n="footerCopyright">© لحظة نسخ. جميع الحقوق محفوظة.</p>
+
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="privacyLink">سياسة الخصوصية</a>
+        <a href="privacy.html#terms" data-i18n="termsLink">شروط الاستخدام</a>
+      </div>
     </div>
   </footer>
 </body>
