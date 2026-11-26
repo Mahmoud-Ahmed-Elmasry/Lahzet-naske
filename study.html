@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="تصفح الفصول والدروس والأسئلة على منصة لحظة نسخ التعليمية.">
+  <title>المحتوى الدراسي | لحظة نسخ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">ل</span>
+      <span class="brand-name">لحظة <strong>نسخ</strong></span>
+    </a>
+
+    <nav class="header-actions">
+      <button class="icon-button" id="languageBtn" type="button">EN</button>
+      <button class="icon-button theme-button" id="themeBtn" type="button" aria-label="تغيير المظهر">
+        <span id="themeIcon">☾</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="study-main container">
+    <div class="study-navigation">
+      <button class="back-button" id="backBtn" type="button">
+        <span class="back-arrow">→</span>
+        <span data-i18n="back">رجوع</span>
+      </button>
+
+      <a class="home-button" href="index.html">
+        <span>⌂</span>
+        <span data-i18n="home">الرئيسية</span>
+      </a>
+    </div>
+
+    <div class="breadcrumb" id="breadcrumb"></div>
+
+    <section class="study-heading">
+      <span class="section-kicker" data-i18n="learningJourney">رحلتك التعليمية</span>
+      <h1 id="pageTitle">المحتوى الدراسي</h1>
+      <p id="pageDescription">اختار اللي محتاجه وابدأ.</p>
+    </section>
+
+    <div class="demo-notice" id="demoNotice">
+      <span>ⓘ</span>
+      <span data-i18n="demoNotice">المحتوى الظاهر حالياً تجريبي لتجربة التصميم والتنقل، وليس محتوى المنهج.</span>
+    </div>
+
+    <section class="content-grid" id="contentGrid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">ل</span>
+      <span class="brand-name">لحظة <strong>نسخ</strong></span>
+    </a>
+    <p data-i18n="footerText">افهم، اتعلم، وانسخ إجابتك.</p>
+    <span class="footer-copy">© <span id="year"></span> Lahzet Naskh</span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
